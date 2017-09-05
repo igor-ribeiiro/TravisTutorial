@@ -1,17 +1,13 @@
-# Test format changes to this .travis.yml file before submitting a PR with:
-# http://lint.travis-ci.org/OneBusAway/onebusaway-android
-
 language: android
 jdk: oraclejdk8
 # Turn off caching to avoid any caching problems
 cache: false
-# Don't use the Travis Container-Based Infrastructure - See #476
 sudo: true
 env:
   global:
     - ANDROID_API_LEVEL=25
     - ANDROID_BUILD_TOOLS_VERSION=25.0.2
-    - ADB_INSTALL_TIMEOUT=2 # minutes (2 minutes by default - see #247)
+    - ADB_INSTALL_TIMEOUT=2 # minutes (If ABD instalation pass this time, the build will throw an error)
 
 android:
   components:
@@ -33,14 +29,14 @@ android:
    - google-gdk-license-.+
    - android-sdk-license-5be876d5
 
+# This step is made for automatic acception of licenses whenever Travis builds the code.
 before_install:
   - mkdir "$ANDROID_HOME/licenses" || true
   - echo -e "\n8933bad161af4178b1185d1a37fbf41ea5269c55" > "$ANDROID_HOME/licenses/android-sdk-license"
   - echo -e "\n84831b9409646a918e30573bab4c9c91346d8abd" > "$ANDROID_HOME/licenses/android-sdk-preview-license"
   - chmod +x gradlew
-  - ./gradlew dependencies || true # DON'T ADD unless you are getting "Install missing components using SDK manager"
-  #Source: https://medium.com/@oldergod/constraint-layout-and-circleci-travis-d50342696d2
+  - ./gradlew dependencies || true
 
-# Only run tests on the main two OneBusAway brand flavors
+# Run your main script
 script:
   - ./gradlew -PdisablePreDex
