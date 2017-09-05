@@ -38,6 +38,7 @@ android:
    - android-sdk-preview-license-.+
    - android-sdk-license-.+
    - google-gdk-license-.+
+   - android-sdk-license-5be876d5
 
 before_install:
   - mkdir "$ANDROID_HOME/licenses" || true
