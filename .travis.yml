@@ -30,6 +30,7 @@ android:
    - extra-google-m2repository
    - extra-android-m2repository # for design library
    - addon-google_apis-google-19 # google play services
+   - addon-google_apis-google-$ANDROID_API # google play services
    - sys-img-armeabi-v7a-addon-google_apis-google-$ANDROID_API_LEVEL
    - sys-img-armeabi-v7a-addon-google_apis-google-$EMULATOR_API_LEVEL
 
@@ -48,7 +49,7 @@ before_install:
 
 # Emulator Management: Create, Start and Wait
 before_script:
-  - echo no | android create avd --force -n test -t android-21 --abi google_apis/armeabi-v7a
+  - echo no | android create avd --force -n test -t android-25 --abi google_apis/armeabi-v7a
   - emulator -avd test -no-audio -no-window &
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
