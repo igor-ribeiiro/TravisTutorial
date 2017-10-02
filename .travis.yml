@@ -47,17 +47,7 @@ script:
 
 after_script:
   - cd cloud_code
+  - b4a configure 1MAD8DtSnE3eED5Hae6VmDPp6egOG6YiEWAPGT66
+  - b4a new
   - b4a deploy
   - cd ..
-
-## The deploy code for the Back4App server
-#deploy:
-#  provider: back4app
-#  - cd cloud_code
-#  - b4a deploy
-#  - cd ..
-#  # This next step is made so that Travis doesn't automatically delete all changes
-#  # made that were not commited
-#  skip_cleanup: true
-#
-#
