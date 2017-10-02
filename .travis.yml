@@ -47,6 +47,7 @@ script:
 
 # The deploy code for the Back4App server
 deploy:
+  provider: back4app
   - cd cloud_code
   - b4a deploy
   - cd ..
