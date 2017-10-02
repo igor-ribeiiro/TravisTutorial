@@ -45,7 +45,6 @@ install:
 # Run your main script
 script:
   - ./gradlew -PdisablePreDex
+  # Run the script that will make the deploy
+  - ./deploy/script.exp
 
-# Run the script that will make the deploy
-after_success:
-  - sudo ./deployB4A.sh
