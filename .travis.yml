@@ -48,4 +48,4 @@ deploy:
   - cd cloud
   - b4a deploy
   - cd ..
-skip_cleanup: true
+  skip_cleanup: true
