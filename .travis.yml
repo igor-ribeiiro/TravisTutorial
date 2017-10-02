@@ -47,7 +47,7 @@ script:
 
 # The deploy code for the Back4App server
 deploy:
-  - cd cloud
+  - cd cloud_code
   - b4a deploy
   - cd ..
   # This next step is made so that Travis doesn't automatically delete all changes
