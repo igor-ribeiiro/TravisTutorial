@@ -45,7 +45,7 @@ script:
 deploy:
 # This is step is made so that Travis doesn't automatically delete all changes
 # made that were not commited
-skip_cleanup: true
+#skip_cleanup: true
   - cd cloud
   - b4a deploy
   - cd ..
