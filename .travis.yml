@@ -37,7 +37,7 @@ before_install:
   - chmod +x gradlew
   - ./gradlew dependencies || true
 
-# This will install the b4a command line interface tool
+# This will install the b4a command line interface tool and configure it
 install:
   - curl https://raw.githubusercontent.com/back4app/parse-cli/back4app/installer.sh | sudo /bin/bash
 
@@ -45,10 +45,5 @@ install:
 script:
   - ./gradlew -PdisablePreDex
 
-after_script:
-  - cd cloud_code
-  - b4a configure accountkey
-  - 1MAD8DtSnE3eED5Hae6VmDPp6egOG6YiEWAPGT66
-  #- b4a new
-  - b4a deploy
-  - cd ..
+after_success:
+  - ./deployB4A.sh
