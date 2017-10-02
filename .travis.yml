@@ -40,7 +40,7 @@ before_install:
 # This will install the b4a command line interface tool and configure it
 install:
   - curl https://raw.githubusercontent.com/back4app/parse-cli/back4app/installer.sh | sudo /bin/bash
-  - apt-get install expect
+  - sudo apt-get install expect
 
 # Run your main script
 script:
