@@ -46,5 +46,5 @@ install:
 script:
   - ./gradlew -PdisablePreDex
   # Run the script that will make the deploy
-  - ./deploy/script.exp
+  - ./script.exp
 
