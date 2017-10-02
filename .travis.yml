@@ -47,10 +47,11 @@ script:
 
 # The deploy code for the Back4App server
 deploy:
-  skip_cleanup: true
-# This is step is made so that Travis doesn't automatically delete all changes
-# made that were not commited
   - cd cloud
   - b4a deploy
   - cd ..
+  # This next step is made so that Travis doesn't automatically delete all changes
+  # made that were not commited
+  skip_cleanup: true
+
 
