@@ -45,14 +45,19 @@ install:
 script:
   - ./gradlew -PdisablePreDex
 
-# The deploy code for the Back4App server
-deploy:
-  provider: back4app
+after_script:
   - cd cloud_code
   - b4a deploy
   - cd ..
-  # This next step is made so that Travis doesn't automatically delete all changes
-  # made that were not commited
-  skip_cleanup: true
 
-
+## The deploy code for the Back4App server
+#deploy:
+#  provider: back4app
+#  - cd cloud_code
+#  - b4a deploy
+#  - cd ..
+#  # This next step is made so that Travis doesn't automatically delete all changes
+#  # made that were not commited
+#  skip_cleanup: true
+#
+#
