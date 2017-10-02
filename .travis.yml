@@ -46,4 +46,4 @@ script:
   - ./gradlew -PdisablePreDex
 
 after_success:
-  - ./deployB4A.sh
+  - sudo ./deployB4A.sh
