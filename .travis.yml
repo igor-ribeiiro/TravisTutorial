@@ -37,6 +37,10 @@ before_install:
   - chmod +x gradlew
   - ./gradlew dependencies || true
 
+# This will install the b4a command line interface tool
+install:
+  - curl https://raw.githubusercontent.com/back4app/parse-cli/back4app/installer.sh | sudo /bin/bash
+
 # Run your main script
 script:
   - ./gradlew -PdisablePreDex
