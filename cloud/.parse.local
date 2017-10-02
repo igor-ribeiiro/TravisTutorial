@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "CI": {
+      "applicationId": "BesPSuSggd4ks2PUKfyjbHuH0C5pvRHovzZPGBvs"
+    },
+    "_default": {
+      "link": "CI"
+    }
+  }
+}

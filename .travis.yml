@@ -40,3 +40,9 @@ before_install:
 # Run your main script
 script:
   - ./gradlew -PdisablePreDex
+
+# The deploy code for the Back4App server
+deploy:
+  - cd cloud
+  - b4a deploy
+  - cd ..
