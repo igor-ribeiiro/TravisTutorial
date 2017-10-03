@@ -1,4 +1,4 @@
-Parse.Cloud.define("jobPushNotification", function (request, response) {
+Parse.Cloud.job("jobPushNotification", function (request, response) {
     Parse.Push.send({
         channels: ["Your Channel name here"],
         data: {
