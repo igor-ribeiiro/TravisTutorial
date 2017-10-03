@@ -26,21 +26,5 @@ public class MainActivity extends AppCompatActivity {
                 .clientKey(CLIENT_KEY)
                 .server(BACK4APP_API).build()
         );
-
-        // Defines the channels this should listen to
-        LinkedList<String> channels = new LinkedList<String>();
-
-        // Pushes channelName
-        channels.push("channelName");
-
-        // Defines ParseInstallation
-        ParseInstallation installation = ParseInstallation.getCurrentInstallation();
-
-        // Adds the Firebase Sender Key
-        installation.put("GCMSenderId", "<Your Firebase Sender Key>");
-
-        // Adds the channel list to the installation
-        installation.put("channels", channels);
-        installation.saveInBackground();
     }
 }
