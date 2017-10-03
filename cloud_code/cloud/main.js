@@ -8,13 +8,13 @@ Parse.Cloud.job("jobPushNotification", function (request, response) {
         }, {
         success: function () {
             // Push was successful
-            response.sucess("push sent");
             console.log("The job notification is running!");
+            response.sucess("push sent");
         },
         error: function (error) {
         // Push was unsucessful
-            response.sucess("error with push: " + error);
             console.log(error);
+            response.sucess("error with push: " + error);
         },
         useMasterKey: true
    });
