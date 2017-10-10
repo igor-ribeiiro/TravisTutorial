@@ -53,4 +53,6 @@ script:
   - sudo npm run test
   # Run the script that will make the deploy
   - ./script.exp
+  - npm --version
+  - node --version
 
