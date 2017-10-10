@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         // This is the installation part
         ParseInstallation installation = ParseInstallation.getCurrentInstallation();
-        installation.put("GCMSenderId", "AAAAFQRw6x8:APA91bETvAkNELVDfEWG0v0HJ3gJMwei0VnIziClb9h0dvQHR17TBCKlo0HJ7qEg8HOC_BK95sm9rqZJ4ujbHj7w-MroXPdbCBnOqRXhh4vmaraKMwPxsonp8ZPO03Vx2r02PGvqaDHQ");
+        installation.put("GCMSenderId", "90268822303");
         installation.saveInBackground();
     }
 }

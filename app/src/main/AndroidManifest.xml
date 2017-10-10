@@ -26,7 +26,7 @@
             </intent-filter>
         </activity>
         <meta-data android:name="com.parse.push.gcm_sender_id"
-            android:value="id:AAAAFQRw6x8:APA91bETvAkNELVDfEWG0v0HJ3gJMwei0VnIziClb9h0dvQHR17TBCKlo0HJ7qEg8HOC_BK95sm9rqZJ4ujbHj7w-MroXPdbCBnOqRXhh4vmaraKMwPxsonp8ZPO03Vx2r02PGvqaDHQ" />
+            android:value="id:90268822303" />
         <service android:name="com.parse.PushService" />
         <receiver android:name="com.parse.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
