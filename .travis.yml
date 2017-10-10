@@ -49,6 +49,8 @@ install:
 # Run your main script
 script:
   - ./gradlew -PdisablePreDex
+  # Run our test script, if it fails, it will note deploy
+  - sudo npm run test
   # Run the script that will make the deploy
   - ./script.exp
-  - sudo npm run test
+
