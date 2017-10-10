@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "express": "^4.15.3",
-    "googleapis": "^20.0.1",
     "parse": "^1.9.2",
     "parse-server": "2.3.x"
   }
