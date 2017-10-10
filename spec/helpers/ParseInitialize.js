@@ -15,8 +15,8 @@ beforeAll(function(done) {
     logLevel: '0'
   });
   app.use('/parse', api);
-  app.get('/clear', (req, res) => {
-    TestUtils.destroyAllDataPermanently().then(() => {
+  app.get('/clear', function (req, res) {
+    TestUtils.destroyAllDataPermanently().then(function () {
       res.send('{}');
     });
   });

@@ -2,10 +2,10 @@
 
 const Parse = require('parse/node');
 
-describe('Parse', () => {
-  it('should have a hello world function', done => {
+describe('Parse', function() {
+  it('should have a hello world function', function(done) {
     Parse.Cloud.run('hello')
-      .then((res) => {
+      .then(function(res) {
         expect(res).not.toBeNull();
         expect(res.random).not.toBeNaN();
         expect(res.hello).toBe('world');
