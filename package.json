@@ -1,25 +1,13 @@
 {
-  "name": "cohort-report",
+  "name": "Continuous_Integration_Back4App_Tutorial",
   "version": "0.0.1",
-  "description": "Module that holds and calculates the Analytics for b4a",
-  "main": "index.js",
+  "description": "Sample package.json for the back4app CI tutorial",
   "scripts": {
-    "test": "jasmine",
-    "build": "babel src -d cloud --copy-files",
-    "lint": "eslint --cache ./src ./spec",
-    "prepublish": "npm run build",
-    "publish": "b4a deploy",
-    "docs": "documentation src/main.js -f md -o docs.md"
+    "test": "jasmine"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-env": "^1.5.2",
-    "babel-preset-es2016": "^6.24.1",
-    "documentation": "^3.0.4",
-    "eslint": "^3.19.0",
     "jasmine": "^2.6.0"
   },
   "engines": {
