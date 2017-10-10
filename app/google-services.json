@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "90268822303",
+    "firebase_url": "https://back4app-travis.firebaseio.com",
+    "project_id": "back4app-travis",
+    "storage_bucket": "back4app-travis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90268822303:android:8ba3a43867ce2ca9",
+        "android_client_info": {
+          "package_name": "com.example.root.travis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90268822303-m80fg5ar0g605qnnee2jcjdr4hn90fvr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8WWU07C9hBx5ZkoDXehbr4TSpvwFT_rk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
