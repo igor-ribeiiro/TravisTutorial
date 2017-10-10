@@ -19,3 +19,20 @@ Parse.Cloud.job("jobPushNotification", function (request, response) {
         useMasterKey: true
    });
 });
+
+/**
+ * Cloud Code Function
+ * This function is a beautiful "Hello World".
+ * Response "200" is called at the end.
+ * @function hello
+ * @alias hello
+ * @example POST /functions/hello "{}"
+ */
+Parse.Cloud.define('hello', function (req, res) {
+  var random = Math.floor(Math.random() * 10000000);
+  var hello = 'world';
+  res.success({
+    random: random,
+    hello: hello
+  });
+});

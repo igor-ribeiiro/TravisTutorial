@@ -1,0 +1,34 @@
+{
+  "name": "cohort-report",
+  "version": "0.0.1",
+  "description": "Module that holds and calculates the Analytics for b4a",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine",
+    "build": "babel src -d cloud --copy-files",
+    "lint": "eslint --cache ./src ./spec",
+    "prepublish": "npm run build",
+    "publish": "b4a deploy",
+    "docs": "documentation src/main.js -f md -o docs.md"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-es2016": "^6.24.1",
+    "documentation": "^3.0.4",
+    "eslint": "^3.19.0",
+    "jasmine": "^2.6.0"
+  },
+  "engines": {
+    "node": ">=6.11"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "googleapis": "^20.0.1",
+    "parse": "^1.9.2",
+    "parse-server": "2.3.x"
+  }
+}
