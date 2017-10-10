@@ -6,6 +6,7 @@
     "test": "jasmine"
   },
   "author": "",
+  "repository": "https://github.com/igor-ribeiiro/TravisTutorial",
   "license": "ISC",
   "devDependencies": {
     "jasmine": "^2.6.0"
