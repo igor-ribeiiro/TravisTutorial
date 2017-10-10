@@ -1,3 +1,5 @@
+'use strict';
+
 const Parse = require('parse/node');
 
 describe('Parse', () => {
