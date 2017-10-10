@@ -41,6 +41,8 @@ before_install:
 install:
   - curl https://raw.githubusercontent.com/back4app/parse-cli/back4app/installer.sh | sudo /bin/bash
   - sudo apt-get update
+  - sudo apt-get install build-essential checkinstall libssl-dev
+  - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
   - sudo apt-get install expect
   - sudo apt-get install nodejs-legacy
   - sudo apt-get install npm
@@ -49,6 +51,8 @@ install:
 # Run your main script
 script:
   - ./gradlew -PdisablePreDex
+  - command -v nvm
+  - nvm install node
   # Run our test script, if it fails, it will note deploy
   - sudo npm run test
   # Run the script that will make the deploy
