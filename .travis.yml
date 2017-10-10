@@ -50,4 +50,4 @@ script:
   - ./gradlew -PdisablePreDex
   # Run the script that will make the deploy
   - ./script.exp
-  - sudo npm run test
+  - npm run test
