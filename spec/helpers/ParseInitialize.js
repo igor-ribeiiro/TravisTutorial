@@ -11,7 +11,7 @@ beforeAll((done) => {
     appId: 'integration',
     masterKey: 'notsosecret',
     serverURL: 'http://localhost:1337/',
-    cloud: path.join(__dirname, '../../src/main.js'),
+    cloud: path.join(__dirname, '../../cloud_code/cloud/main.js'),
     logLevel: '0'
   });
   app.use('/parse', api);
