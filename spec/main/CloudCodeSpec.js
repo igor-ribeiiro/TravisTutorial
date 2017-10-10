@@ -1,4 +1,8 @@
-'use strict';
+const Parse = require('parse').Parse;
+
+Parse.initialize('BesPSuSggd4ks2PUKfyjbHuH0C5pvRHovzZPGBvs', '8NZQE06iyB91wZiViST4tDh1Ww0LlFakO6FujSfG');
+
+
 
 describe('Parse', () => {
   it('should have a hello world function', done => {
