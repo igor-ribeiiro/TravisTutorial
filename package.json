@@ -1,11 +1,11 @@
 {
   "name": "Continuous_Integration_Back4App_Tutorial",
   "version": "0.0.1",
-  "description": "Sample package.json for the back4app CI tutorial",
+  "description": "Sample package.json for the Back4App CI tutorial",
   "scripts": {
     "test": "jasmine"
   },
-  "author": "",
+  "author": "Igor_Ribeiro",
   "repository": "https://github.com/igor-ribeiiro/TravisTutorial",
   "license": "ISC",
   "devDependencies": {
