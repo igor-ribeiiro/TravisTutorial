@@ -5,7 +5,7 @@ const Parse = require('parse/node');
 const app = express();
 const TestUtils = require('parse-server').TestUtils;
 
-beforeAll((done) => {
+beforeAll(function(done) {
   const api = new ParseServer({
     databaseURI: 'mongodb://localhost:27017/integration',
     appId: 'integration',
@@ -25,7 +25,7 @@ beforeAll((done) => {
   Parse.CoreManager.set('SERVER_URL', 'http://localhost:1337/parse');
   Parse.Storage._clear();
 
-  app.listen(1337, () => {
+  app.listen(1337, function() {
     done();
   });
 });
