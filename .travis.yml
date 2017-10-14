@@ -47,6 +47,8 @@ script:
   # Run our test script, if it fails, it will not deploy
   - npm --version
   - node --version
+  # Initializaze our Mongo DB for the local tests
+  - sudo service mongod start
   - sudo npm run test
   - npm --version
   - node --version
