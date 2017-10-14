@@ -40,7 +40,6 @@ install:
   - node --version
   - sudo npm install
   - sudo apt-get install mongodb
-  - sudo service mongodb start
 
 # Run your main script
 script:
