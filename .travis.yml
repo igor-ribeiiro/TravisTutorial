@@ -50,7 +50,7 @@ install:
   - nvm use npm
   - npm --version
   - node --version
-  - sudo npm install
+  - npm install
 
 # Run your main script
 script:
