@@ -55,6 +55,8 @@ script:
   # Compile your java application
   - ./gradlew -PdisablePreDex
   # Run our test script, if it fails, it will not deploy
+  - npm --version
+  - node --version
   - sudo npm run test
   - npm --version
   - node --version
