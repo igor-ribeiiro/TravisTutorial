@@ -55,7 +55,7 @@ install:
 # Run your main script
 script:
   # Compile your java application
-  # - ./gradlew -PdisablePreDex
+  - ./gradlew
   # Run our test script, if it fails, it will not deploy
   - npm --version
   - node --version
