@@ -39,6 +39,7 @@ install:
   - npm --version
   - node --version
   - sudo npm install
+  - sudo apt-get install mongodb
   - sudo rm /var/lib/mongodb/mongod.lock
   - mongod --repair
   - sudo service mongodb start
