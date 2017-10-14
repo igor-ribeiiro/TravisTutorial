@@ -45,8 +45,6 @@ install:
 script:
   # Compile your java application
   - ./gradlew -PdisablePreDex
-  # Initializaze our Mongo DB for the local tests
-  - sudo service mongod start
   # Run our test script, if it fails, it will not deploy
   - sudo npm run test
 
