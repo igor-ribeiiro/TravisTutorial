@@ -39,19 +39,18 @@ install:
   - npm --version
   - node --version
   - sudo npm install
+  - sudo rm /var/lib/mongodb/mongod.lock
+  - mongod --repair
+  - sudo service mongodb start
 
 # Run your main script
 script:
   # Compile your java application
   - ./gradlew -PdisablePreDex
-  # Run our test script, if it fails, it will not deploy
-  - npm --version
-  - node --version
   # Initializaze our Mongo DB for the local tests
   - sudo service mongod start
+  # Run our test script, if it fails, it will not deploy
   - sudo npm run test
-  - npm --version
-  - node --version
 
 after_success:
   # Run the script that will make the deploy if the tests pass
