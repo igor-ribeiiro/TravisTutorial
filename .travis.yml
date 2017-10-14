@@ -41,7 +41,7 @@ install:
   - sudo npm install
   - sudo apt-get install mongodb
   - sudo service mongod stop
-  - sudo service mongod start
+  - sudo mongod &
 
 # Run your main script
 script:
