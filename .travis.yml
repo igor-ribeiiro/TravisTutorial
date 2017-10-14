@@ -40,9 +40,9 @@ before_install:
 # This will install the b4a command line interface tool and configure it
 install:
   - curl https://raw.githubusercontent.com/back4app/parse-cli/back4app/installer.sh | sudo /bin/bash
-  - sudo apt-get update
-  - sudo apt-get install build-essential checkinstall libssl-dev
-  - sudo apt-get install expect
+  - sudo apt-get -y update
+  - sudo apt-get install -y build-essential checkinstall libssl-dev
+  - sudo apt-get install -y expect
   - curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
   - sudo apt-get install -y nodejs
   - npm --version
