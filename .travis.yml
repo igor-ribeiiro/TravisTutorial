@@ -28,6 +28,7 @@ android:
     - android-sdk-license-.+
     - google-gdk-license-.+
     - android-sdk-license-5be876d5
+    - '.+'
 
 # This step is made for automatic acception of licenses whenever Travis builds the code.
 before_install:
