@@ -48,6 +48,7 @@ install:
   - sudo apt-get install npm
   - sudo npm install
   - nvm install node
+  - nvm use default
 
 # Run your main script
 script:
