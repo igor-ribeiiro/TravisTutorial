@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "express": "^4.15.3",
+    "mongodb": "^2.2.33",
     "parse": "^1.9.2",
     "parse-server": "2.3.x"
   }
